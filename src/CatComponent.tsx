@@ -50,7 +50,7 @@ export class CatComponent extends Component<CatProps> {
     }
 
     updateAge(e: any) {
-        this.props.cat.age.next(e.target.value);
+        this.props.cat.age.next(parseInt(e.target.value));
     }
 
     updateDescription(e: any) {
